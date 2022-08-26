@@ -136,13 +136,15 @@ h2{
     line-height: 39px;
     color: #F3F4F6;
     text-align: center;
-
-
-
+}
+.form{
+    display: flex;
+    
 }
 #wrapper-inputs-formulario{
     display: flex;
     flex-direction:row;
     justify-content: space-between;
-    width:100%;
+    align-items: center;
+    width:60%;
 }
