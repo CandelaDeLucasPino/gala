@@ -7,6 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/estilo.css">
@@ -14,49 +18,250 @@
 </head>
 <body>
     <div id="SLIDE_BG">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img class="logo" src="./imagenes/logo.png" alt=""></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-            </div>
-          </nav>
+      <nav class="nav container" id="nav">
+        <h2 class="nav_logo"><img src="./imagenes/logo.png" alt=""></h2>
+        <ul class="nav_links">
+            <li class="nav_item">
+                <a href="#projects" class="nav_link">Projects</a>
+            </li>
+            <li class="nav_item">
+                <a href="#retamas" class="nav_link">Retamas</a>
+            </li>
+            <li class="nav_item">
+                <a href="#loscanales" class="nav_link">Los Canales</a>
+            </li>
+            <li class="nav_item">
+                <a href="#contacto" class="nav_link">Contacto</a>
+            </li>
+        </ul>
+        <a href="#nav" class="nav_hamburguer">
+            <img src="./imagenes/menu.svg" alt="" class="nav_icon">
+        </a>
+        <a href="#" class="nav_close">
+            <img src="./imagenes/close.svg" alt="" class="nav_icon">
+        </a>
+    </nav>
     </div>
     <div class="links">
-      <a href=""><button class="btn">Retamas</button></a>
-      <a href=""><button class="btn">Los Canales</button></a>
+      <a href="#retamas"><button class="btn">Retamas</button></a>
+      <a href="#canales"><button class="btn">Los Canales</button></a>
     </div>
     <div class="group1">
-      <div class="title">
-        <h2 class="projects">Projects</h2>
+      <div class="projects" id="projects">
+        <img src="./imagenes/Projects.png" alt="">
+        
       </div>
       <img src="./imagenes/fotos1.png" alt="" class="fotos1">
     </div>
-    <div class="retamas">
+    <div class="retamas" id="retamas">
       <img src="./imagenes/Retamas.png" alt="">
     </div>
-    <div id="carr2">
-
+        <!--carrusel uno-->
+        <div class="container text-center my-3">
+          <h2 class="font-weight-light"></h2>
+          <div class="row mx-auto my-auto justify-content-center">
+              <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner" role="listbox">
+                      <div class="carousel-item active">
+                          <div class="col-md-3">
+                              <div class="card">
+                                  <div class="card-img">
+                                      <img src="./imagenes/3.png" class="img-fluid">
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                          <div class="col-md-3">
+                              <div class="card">
+                                  <div class="card-img">
+                                      <img src="./imagenes/4.png" class="img-fluid">
+                                  </div>
+                                  
+                              </div>
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                          <div class="col-md-3">
+                              <div class="card">
+                                  <div class="card-img">
+                                      <img src="./imagenes/5.png" class="img-fluid">
+                                  </div>
+                                  
+                              </div>
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                          <div class="col-md-3">
+                              <div class="card">
+                                  <div class="card-img">
+                                      <img src="./imagenes/6.png" class="img-fluid">
+                                  </div>
+                                  
+                              </div>
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                          <div class="col-md-3">
+                              <div class="card">
+                                  <div class="card-img">
+                                      <img src="./imagenes/7.png" class="img-fluid">
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                          <div class="col-md-3">
+                              <div class="card">
+                                  <div class="card-img">
+                                      <img src="./imagenes/8.png" class="img-fluid">
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="./imagenes/9.png" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="col-md-3">
+                          <div class="card">
+                              <div class="card-img">
+                                  <img src="./imagenes/10.png" class="img-fluid">
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  </div>
+                  <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  </a>
+                  <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  </a>
+              </div>
+          </div>
+          <h5 class="mt-2 fw-light"></h5>
+      </div>
+    <div class="location1">
+      <img src="./imagenes/locationretamas.png" alt="">
+      <img src="./imagenes/locationretamas2.png" alt="">
     </div>
-    <div class="location">
-      <img src="./imagenes/location1.png" alt="">
-    </div>
-    <div class="loscanales">
+    <!--Los Canales-->
+    <div class="canales" id="loscanales">
       <img src="./imagenes/los canales.png" alt="">
     </div>
-    <div class="location1">
-      <img src="./imagenes/loscanales1.png" alt="">
-      <img src="./imagenes/loscanales2.png" alt="">
+    <div id="myCarousel" class="carousel slide container" data-bs-ride="carousel">
+      <div class="carousel-inner w-100">
+        <div class="carousel-item active">
+          <div class="col-md-3">
+            <div class="card card-body">
+              <img class="img-fluid" src="./imagenes/11.png">
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="col-md-3">
+            <div class="card card-body">
+              <img class="img-fluid" src="./imagenes/12.png">
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="col-md-3">
+            <div class="card card-body">
+              <img class="img-fluid" src="./imagenes/13.png">
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="col-md-3">
+            <div class="card card-body">
+              <img class="img-fluid" src="./imagenes/14.png">
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="col-md-3">
+            <div class="card card-body">
+              <img class="img-fluid" src="./imagenes/15.png">
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="col-md-3">
+            <div class="card card-body">
+              <img class="img-fluid" src="./imagenes/16.png">
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="col-md-3">
+            <div class="card card-body">
+              <img class="img-fluid" src="./imagenes/18.png">
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="col-md-3">
+            <div class="card card-body">
+              <img class="img-fluid" src="./imagenes/19.png">
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="col-md-3">
+            <div class="card card-body">
+              <img class="img-fluid" src="./imagenes/20.png">
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="col-md-3">
+            <div class="card card-body">
+              <img class="img-fluid" src="./imagenes/21.png">
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
+    <div class="location1">
+      <img src="./imagenes/locationloscanales1.png" alt="">
+      <img src="./imagenes/locationloscanales2.png" alt="">
+    </div>
+    
     <form class="form" action="">
-      <p class="feedback">FeedBack</p>
-                <div id="wrapper-inputs-formulario">
-                    <input type="text" name="" id="uno" size="16%"  placeholder="Name">
-                    <input type="text" name="" id="uno" size="16%" placeholder="E-mail">
-                    <input type="text" name="" id="uno" size="16%"  placeholder="Subject">
-                </div>
+      <div class="contacto" id="contacto">
+        <img src="./imagenes/contacto.png" alt="">
+      </div>
+      <div id="wrapper-inputs-formulario">
+          <input type="text" name="" id="uno" size="22%" placeholder=" Your Name">
+          <input type="email" name="" id="dos" size="22%" placeholder=" E-mail">
+          <input type="text" name="" id="tres" size="22%"  placeholder=" Subject">
+      </div>
+      <button>SEND</button>
     </form>
+    <footer class="footer">
+      <div class="enlaces">
+       <a href="#SLIDE_BG">Home</a>
+       <a href="#projects">Projects</a>
+       <a href="#retamas">Retamas</a>
+       <a href="#loscanales">Los canales</a>
+      </div>
+    </footer>
 
 
 
@@ -70,8 +275,13 @@
 
 
 
-
+    
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+
+    
+
+    
 </body>
 </html>
